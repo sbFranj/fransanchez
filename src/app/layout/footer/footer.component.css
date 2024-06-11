@@ -1,0 +1,63 @@
+.fcont{
+    display: flex;
+    margin-left: 3rem;
+    font-size: 120%;
+    
+}
+
+
+.space{
+    margin-right: 17%;
+}
+
+
+a{
+    text-decoration-color: black;
+    color: black;
+}
+
+@media screen and (max-width: 1600px) {
+    .space{
+        margin-right: 14%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .space{
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .space{
+        margin-right: 3%;
+    }
+}
+@media screen and (max-width: 825px) {
+    .space{
+        margin-right: 2%;
+    }
+    .fcont{
+        font-size: 80%;
+        margin-left: 1rem;
+    }
+    
+}
+@media screen and (max-width: 650px) {
+    .space{
+        margin-right: 2%;
+    }
+    .fcont{
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .space{
+        margin-right: 1%;
+    }
+    .fcont{
+        font-size: 50%;
+    }
+}
+
+

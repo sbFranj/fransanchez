@@ -1,0 +1,85 @@
+<br>
+<h1>{{languageService.eng? 'Academic training':'Formacion académica'}}</h1>
+<div class="cont">
+
+    <div class="daw item">
+        <img src="../../../assets/academico/daw.jpg" alt="">
+        <div>
+
+            <h3>{{languageService.eng? 'Web Applications Development':'Desarrollo de Aplicaciones Web'}}</h3>
+            <p>2022/24 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IES Jacarandá</p>
+
+            <p>{{languageService.eng? 'Formed at:':'Formación en:'}} <br>
+                 Python - Java - JavaScript - Oracle - MySql - MongoDB
+                - Dbeaber - HTML - CSS<br>  {{languageService.eng? 'Information systems':'Sistemas informáticos'}}
+                - JSON - XML - Git - Eclise - Visual Studio Code
+                - DOM - Ajax - TypeScript <br> Axios - Angular - Express.js
+                - React - Node.js - JSP - Spring Boot - Thymeleaf
+                - Spring Api REST<br>  JWT - Spring Security - Spring Email
+                - JPA - Docker - Swagger - Bootstrap - Flex - Grid - Figma
+                <hr>
+        </div>
+    </div>
+
+    <div class="sist item">
+        <div>
+            @if (!languageService.eng) {
+
+            <h3>Sistemas de Telecomunicaciones e Informática</h3>
+            <p>IES Axati&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018/20</p>
+            <br><br>
+            <p>Formación en:<br>
+                Instalación de fibra óptica. - Sistemas en CNC <br>
+                Domótica. - Sistemas de Audio y video <br>
+                Diseño e impresión 3D. - Instalación de control de seguridad <br>
+                Instalación eléctrica. - Instalación de radio-televisión </p>
+            }@else {
+            <h3>Telecommunications and IT Systems</h3>
+            <p>IES Axati&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018/20</p>
+            <br><br>
+            <p>Formed at: <br>
+                Fiber optic installation - CNC systems 
+                Home automation - <br>Audio and video systems 
+                3D design and printing -<br> Security control facility 
+                Electrical installation - Radio-television installation </p>
+            }
+            <hr>
+        </div>
+        <img src="../../../assets/academico/sist.jpg" alt="">
+    </div>
+
+    <div class="smr item">
+        <img src="../../../assets/academico/smr.jpg" alt="">
+        <div>
+            @if (!languageService.eng) {
+
+            <h3>Sistemas Microinformáticos y Redes</h3>
+            <p>IES Axati&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2012/14</p>
+            <br><br>
+            <p>Formado en: <br>
+                 Montaje y mantenimiento de equipos
+                 Sistemas operativos <br>
+                 Aplicaciones ofimáticas
+                 Redes locales <br>
+                 Sistemas operativos en red
+                 Seguridad informática <br>
+                 Servicios en red
+                 Aplicaciones web</p>
+            }@else {
+            <h3>Microcomputer systems and networks</h3>
+            <p>IES Axati&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2012/14</p>
+            <br><br>
+            <p>Formed at: <br>
+                 Assembly and maintenance of equipment
+                 Operating systems <br>
+                 Office automation applications
+                 Local networks <br>
+                 Network operating systems
+                 Informatic security <br>
+                 Network services
+                 Web applications</p>
+            }
+            <hr>
+        </div>
+    </div>
+</div>

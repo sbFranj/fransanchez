@@ -1,0 +1,76 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 150%;
+}
+
+nav {
+    background-color: rgb(243, 243, 243);
+}
+
+.logo {
+    font-size: 130%;
+}
+
+
+.ml1rem {
+    margin-left: 1rem;
+}
+
+.ml2rem {
+    margin-left: 2rem;
+}
+
+.mr1rem {
+    margin-right: 1rem;
+}
+
+.mb1rem {
+    margin-bottom: 1rem;
+}
+
+.circle {
+    fill: rgb(122, 0, 0);
+    margin-bottom: 0.4rem;
+}
+
+.itemnav {
+    font-size: 80%;
+    margin-top: 0.4rem;
+}
+
+.language img{
+    width: 30px;
+}
+
+.navbar-brand{
+    width: 25rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .separator {
+        display: none
+    }
+
+    .toglem {
+        margin-left: 6rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-brand{
+        transform: scale(0.8);
+        width: auto;
+    }
+
+    .ml2rem{
+        margin-left: -0.5rem;
+    }
+
+    .navbar-toggler{
+        transform: scale(0.7);
+        margin-left: 0.8rem;
+    }
+}

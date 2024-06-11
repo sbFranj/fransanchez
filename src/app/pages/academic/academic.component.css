@@ -1,0 +1,56 @@
+img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.cont{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    margin-bottom: 5rem;
+    text-align: left;
+    
+}
+
+.item div{
+    margin-left: 2rem;
+}
+
+.sist{
+    margin-left: 20rem;
+    text-align: right;
+    
+}
+
+.sist div{
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+    .item{
+        flex-direction: column;
+    }
+
+    .sist{
+        margin-left: 0rem;
+        text-align: left;
+        flex-direction: column-reverse;
+
+    }
+    
+    .sist div{
+        margin-right: 0rem;
+    }
+
+    img{
+        margin-left: 2rem;
+    }
+    h1{
+        margin-top: 2rem;
+    }
+}

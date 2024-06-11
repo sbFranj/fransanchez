@@ -1,0 +1,197 @@
+.littleofme {
+    
+    display: flex;
+    margin-bottom: 8rem;
+}
+
+.separator{
+    margin-bottom: 5rem;
+}
+
+.logo {
+    width: 120px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+
+}
+
+.logow {
+    width: 120px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+
+.logoh {
+    height: 120px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+
+.me {
+    height: 480px;
+    width: 480px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.desc {
+    font-size: 150%;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    text-align: left;
+}
+
+.desc h1 {
+    margin-top: 2rem;
+    font-size: 300%;
+    font-weight: 500;
+}
+
+.desc p {
+    font-size: 80%;
+}
+
+.language{
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.language img{
+    width: 30px;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+
+h1 {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        transform: scale(0.7);
+        margin-left: -5rem;
+    }
+
+
+    .language{
+        margin-top: -15rem;
+        margin-bottom: 6rem;
+    }
+    .separator{
+        margin-bottom: 0rem;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .me{
+        transform: scale(0.6);
+    }
+    .desc {
+       
+        margin-left: -5rem;
+    }
+    .logo {
+        width: 110px;
+    
+    }
+    
+    .logow {
+        width: 110px;
+    
+    }
+    
+    .logoh {
+        height: 110px;
+    
+    }
+
+    
+    .language{
+        margin-top: -15rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main {
+        
+        
+        margin-left: -1.5rem;
+    }
+
+    .desc {
+        font-size: 150%;
+        margin-left: -5rem;
+        margin-top: 4rem;
+        text-align: left;
+    }
+
+    .littleofme {
+        margin-left: -10rem;
+        transform: scale(0.7);
+        margin-top: -15rem;
+        margin-bottom: 5rem;
+
+    }
+
+    .me{
+        transform: scale(0.6);
+    }
+    .separator{
+        margin-bottom: -5rem;
+    }
+
+    .logo {
+        width: 90px;
+    
+    }
+    
+    .logow {
+        width: 90px;
+    
+    }
+    
+    .logoh {
+        height: 90px;
+    
+    }
+
+    
+    .language{
+        margin-top: -25rem;
+        margin-bottom: 10rem;
+    }
+
+}
