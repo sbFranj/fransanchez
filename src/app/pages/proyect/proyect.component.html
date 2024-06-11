@@ -1,0 +1,40 @@
+<br>
+<h1>{{languageService.eng? 'Projects':'Proyectos'}}</h1>
+<div class="cont">
+    <div class="flicksense">
+        <div>
+            <a (click)="goTo()" href="javascript:void(0)"><img src="../../../assets/project/flicksense.png" alt=""></a>
+        </div>
+        <div class="desc">
+            <a (click)="goTo()" href="javascript:void(0)"><h3 >FlickSense</h3></a>
+            @if (!languageService.eng) {
+            <h5>Proyecto integrado final de ciclo</h5>
+            <p>
+                FlickSense es una red social para los amantes del cine, con un <a (click)="catalog()" href="javascript:void(0)">catálogo</a> (ficticio) de más de 1000 <br>
+                películas, donde poder calificarlas, hacerles críticas, seguir a usuarios con tus mismos gustos, <br>
+                obtener recomendaciones según a los usuarios que sigas, ver las críticas de los demás usuarios, <br>
+                ver la nota media de las películas, cuantos votos tienen, buscar películas, etc. Solo tienes que <br>
+                <a (click)="register()" href="javascript:void(0)">registrarte</a>. Y si consigues entrar en el Staff podrás administrar el catálogo de películas y los
+                usuarios.
+            </p>
+            <h5>Aplicacion totalmente funcional con seguridad y roles. Desplegada al 100%</h5>
+            <p>Tecnologias usadas: <br>
+                Angular, Spring Boot y MySql</p>
+
+            }@else {
+
+            <h5>Final Integrated Project</h5>
+            <p>
+                FlickSense is a social network for movie lovers, featuring a (fictional) <a (click)="catalog()" href="javascript:void(0)">catalog</a> of over 1000 movies.
+                Users can rate movies, write reviews, follow users with similar tastes, receive recommendations based on
+                who they follow, read other users' reviews, see the average ratings and number of votes for each movie,
+                search for movies, and more. Just <a (click)="register()" href="javascript:void(0)">register</a> to get started. If you become part of the staff, you'll be
+                able to manage the movie catalog and users.
+            </p>
+            <h5>Fully functional application with security and roles, fully deployed</h5>
+            <p>Technologies used: <br>
+                Angular, Spring Boot, and MySQL</p>
+            }
+        </div>
+    </div>
+</div>
