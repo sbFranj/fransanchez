@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-contact',
@@ -9,8 +10,6 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
-
-  desc(){
-    
-  }
+  constructor(public languageService:LanguageService){}
+  
 }

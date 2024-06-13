@@ -43,10 +43,15 @@ nav {
 
 .language img{
     width: 30px;
+    margin-bottom: 0.37rem;
 }
 
 .navbar-brand{
     width: 25rem;
+}
+
+.navbar-toggler{
+    background-color: rgb(184, 184, 184);
 }
 
 @media screen and (max-width: 1000px) {
@@ -67,10 +72,22 @@ nav {
 
     .ml2rem{
         margin-left: -0.5rem;
+        margin-top: -1rem;
     }
 
     .navbar-toggler{
         transform: scale(0.7);
         margin-right: 4rem;
+        margin-top: 0.1rem;
+        height: 35px;
+
+    }
+    .navbar-toggler-icon{
+        height: 35px;
+        margin-top: -0.35rem;
+    }
+
+    .navbar{
+      
     }
 }

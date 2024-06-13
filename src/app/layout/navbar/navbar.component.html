@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg py-3">
     <div class="container-fluid">
-      <a class="navbar-brand white ml2rem " routerLink="/">
+      <a class="navbar-brand white ml2rem " routerLink="/" (click)="showFooter()">
         <svg  width="30" height="30" viewBox="0 0 200 200" class="circle">
           <g >
               <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z"></path>
@@ -11,11 +11,12 @@
               
               <div class="language">
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                @if (!languageService.eng) {
+                <a href="javascript:void(0)" (click)="languageService.change()"><img src="../../../assets/idiomas/eng esp.png" alt=""></a>
+                <!-- @if (!languageService.eng) {
                   <a href="javascript:void(0)" (click)="languageService.change()"><img src="../../../assets/idiomas/eng.png" alt=""></a>
                 }@else {
                   <a href="javascript:void(0)" (click)="languageService.change()"><img src="../../../assets/idiomas/esp.png" alt=""></a>
-                }
+                } -->
               </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
@@ -23,25 +24,25 @@
       <div class="collapse navbar-collapse mr1rem" id="navbarNav">
         <ul class="navbar-nav ms-auto ">
           <li class="nav-item ">
-            <a class="nav-link itemnav toglem" routerLink="/academic">{{languageService.eng? 'Academic training': 'Formación académica'}}</a>
+            <a (click)="toggleNavbar()" (click)="showFooter()" class="nav-link itemnav toglem" routerLink="/academic">{{languageService.eng? 'Academic training': 'Formación académica'}}</a>
           </li>
           <li class="nav-item separator">
             <a class="nav-link">|</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link itemnav toglem" routerLink="/professional">{{languageService.eng? 'Professional experience': 'Experiencia profesional'}}</a>
+            <a (click)="toggleNavbar()" (click)="showFooter()" class="nav-link itemnav toglem" routerLink="/professional">{{languageService.eng? 'Professional experience': 'Experiencia profesional'}}</a>
           </li>
           <li class="nav-item separator">
             <a class="nav-link">|</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link itemnav toglem" routerLink="/project">{{languageService.eng? 'Projects': 'Proyectos'}}</a>
+            <a (click)="toggleNavbar()" (click)="showFooter()" class="nav-link itemnav toglem" routerLink="/project">{{languageService.eng? 'Projects': 'Proyectos'}}</a>
           </li>
           <li class="nav-item separator">
             <a class="nav-link">|</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link itemnav toglem" routerLink="/contact">{{languageService.eng? 'Contact': 'Contacto'}}</a>
+            <a (click)="toggleNavbar()" (click)="hiddeFooter()" class="nav-link itemnav toglem" routerLink="/contact">{{languageService.eng? 'Contact': 'Contacto'}}</a>
           </li>
         </ul>
       </div>

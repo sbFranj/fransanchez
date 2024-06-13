@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class LanguageService {
 
   eng:boolean = false
+  show:boolean = true
   constructor() { }
 
   change(){
