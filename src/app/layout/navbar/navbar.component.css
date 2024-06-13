@@ -32,7 +32,8 @@ nav {
 }
 
 .circle {
-    fill: rgb(122, 0, 0);
+    /* fill: rgb(122, 0, 0); */
+    fill: #851429;
     margin-bottom: 0.4rem;
 }
 
