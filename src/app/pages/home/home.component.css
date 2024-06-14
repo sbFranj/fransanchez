@@ -64,6 +64,13 @@
     width: 30px;
 }
 
+b{
+    margin-left: 0.3rem;
+}
+p{
+    margin-left: 0.3rem;
+}
+
 @keyframes show {
     from {
         opacity: 0;
