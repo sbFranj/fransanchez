@@ -1,6 +1,8 @@
 .cont{
     margin-top: 5rem;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 img{
@@ -13,18 +15,78 @@ img{
 
 .flicksense{
     display: flex;
+    margin-bottom: 1rem;
+    
 }
 
 .desc{
-    margin-left: 4rem;
+    margin-left: 5rem;
+    text-align: left;
 }
 
+.myapp{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.descmyapp{
+   text-align: right;
+   width: 110%;
+   margin-right: 4rem;
+   
+}
+
+p{
+    text-align: justify;
+}
+
+a{
+    text-align: center;
+}
+
+.tarjeta-digital {
+    display: none; 
+    position: fixed;
+    top:30%;
+    left: 50%;
+    width: 350px;
+    height: 550px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.link-tarjeta-digital:hover + .tarjeta-digital {
+    display: flex; 
+}
+
+.crud-video{
+    position: fixed;
+    top:60%;
+    left: 50%;
+    width: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: red;
+}
 @media screen and (max-width: 800px) {
-    .flicksense{
-        flex-direction: column;
+    .crud-video{
+        left: 40%;
+        width: 60%;
+    }
+    .descmyapp, .desc{
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .flicksense, .myapp{
+        flex-direction: column-reverse;
+        margin-bottom: 1rem;
+    }
+    .cont{
+        margin-top: 2rem;
     }
     h1{
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
     img{

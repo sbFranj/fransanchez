@@ -35,13 +35,14 @@
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
     
 }
 
 .desc {
     font-size: 150%;
     margin-left: 3rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     text-align: left;
 }
 
@@ -68,7 +69,17 @@ b{
     margin-left: 0.3rem;
 }
 p{
-    margin-left: 0.3rem;
+   text-align: justify;
+   margin-left: 0.3rem;
+   width: 120%;
+}
+
+img{
+    transition: transform 0.5s ease;
+}
+
+img:hover{
+    transform:scale(1.3);
 }
 
 @keyframes show {
@@ -123,13 +134,41 @@ h1 {
 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1200px) {
+
+    p{
+        width: 100%;
+    }
+    img {
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+    
+        animation-timeline: --image;
+        animation-name: show;
+    
+        animation-range: entry 10% cover 20%;
+        animation-fill-mode: both;
+    }
+
+    .div-tecno{
+        margin-left: 5rem;
+        height: 150%;
+    }
+
+    
+    .littleofme{
+        display: flex;
+        flex-direction: column;
+    }
     .me{
+        margin-top: -7rem;
+        margin-left: 3rem;
         transform: scale(0.6);
     }
     .desc {
-       
-        margin-left: -5rem;
+       width: 100%;
+       margin-top: -4rem;
+        margin-left: 4rem;
     }
     .logo {
         width: 110px;
@@ -151,56 +190,4 @@ h1 {
         margin-top: -15rem;
         margin-bottom: 2rem;
     }
-}
-
-@media screen and (max-width: 400px) {
-    .main {
-        
-        
-        margin-left: -1.5rem;
-    }
-
-    .desc {
-        font-size: 150%;
-        margin-left: -5rem;
-        margin-top: 4rem;
-        text-align: left;
-    }
-
-    .littleofme {
-        margin-left: -10rem;
-        transform: scale(0.7);
-        margin-top: -15rem;
-        margin-bottom: 5rem;
-
-    }
-
-    .me{
-        transform: scale(0.6);
-    }
-    .separator{
-        margin-bottom: -5rem;
-    }
-
-    .logo {
-        width: 90px;
-    
-    }
-    
-    .logow {
-        width: 90px;
-    
-    }
-    
-    .logoh {
-        height: 90px;
-    
-    }
-
-    
-    .language{
-        margin-top: -25rem;
-        margin-bottom: 10rem;
-    }
-
 }

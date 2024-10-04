@@ -3,33 +3,113 @@
 <div class="cont">
     <div class="flicksense">
         <div>
-            <a (click)="goTo()" href="javascript:void(0)"><img src="../../../assets/project/flicksense.png" alt=""></a>
+            <a (click)="goTo('https://flicksense.vercel.app/')" href="javascript:void(0)"><img
+                    src="../../../assets/project/flicksense.png" alt=""></a>
         </div>
         <div class="desc">
-            <a (click)="goTo()" href="javascript:void(0)"><h3 >FlickSense</h3></a>
+            <a (click)="goTo('https://flicksense.vercel.app/')" href="javascript:void(0)">
+                <h3>FlickSense</h3>
+            </a>
             @if (!languageService.eng) {
             <h5>Proyecto integrado final de ciclo</h5>
             <p>
-                FlickSense es una red social para los amantes del cine, con un <a (click)="catalog()" href="javascript:void(0)">catálogo</a> (ficticio) de más de 1000 <br>
+                FlickSense es una red social para los amantes del cine, con un <a
+                    (click)="goTo('https://flicksense.vercel.app/movies')" href="javascript:void(0)">catálogo</a>
+                (ficticio) de más de 1000 <br>
                 películas, donde poder calificarlas, hacerles críticas, seguir a usuarios con tus mismos gustos, <br>
                 obtener recomendaciones según a los usuarios que sigas, ver las críticas de los demás usuarios, <br>
                 ver la nota media de las películas, cuantos votos tienen, buscar películas, etc. Solo tienes que <br>
-                <a (click)="register()" href="javascript:void(0)">registrarte</a>. Y si consigues entrar en el Staff podrás administrar el catálogo de películas y los
+                <a (click)="goTo('https://flicksense.vercel.app/auth/register')"
+                    href="javascript:void(0)">registrarte</a>. Y si consigues entrar en el Staff podrás administrar el
+                catálogo de películas y los
                 usuarios.
             </p>
             <h5>Aplicacion totalmente funcional con seguridad y roles. Desplegada al 100%</h5>
-            <p>Tecnologias usadas: <br>
-                Angular, Spring Boot y MySql</p>
+            <span>Tecnologias usadas: <br>
+                Angular, Spring Boot y MySql</span>
 
             }@else {
 
             <h5>Final Integrated Project</h5>
             <p>
-                FlickSense is a social network for movie lovers, featuring a (fictional) <a (click)="catalog()" href="javascript:void(0)">catalog</a> of over 1000 movies.
+                FlickSense is a social network for movie lovers, featuring a (fictional) <a (click)="catalog()"
+                    href="javascript:void(0)">catalog</a> of over 1000 movies.
                 Users can rate movies, write reviews, follow users with similar tastes, receive recommendations based on
                 who they follow, read other users' reviews, see the average ratings and number of votes for each movie,
-                search for movies, and more. Just <a (click)="register()" href="javascript:void(0)">register</a> to get started. If you become part of the staff, you'll be
+                search for movies, and more. Just <a (click)="register()" href="javascript:void(0)">register</a> to get
+                started. If you become part of the staff, you'll be
                 able to manage the movie catalog and users.
+            </p>
+            <h5>Fully functional application with security and roles, fully deployed</h5>
+            <p>Technologies used: <br>
+                Angular, Spring Boot, and MySQL</p>
+            }
+        </div>
+    </div>
+    <hr>
+    <div class="myapp">
+        <div>
+            <a (click)="goTo('https://my-app-front-one.vercel.app/')" href="javascript:void(0)"><img
+                    src="../../../assets/project/myapp.jpg" alt=""></a>
+        </div>
+        <div class="descmyapp">
+            <a (click)="goTo('https://my-app-front-one.vercel.app/')" href="javascript:void(0)">
+                <h3>My App</h3>
+            </a>
+            @if (!languageService.eng) {
+            <h5>Proyecto libre</h5>
+            <!-- <p>
+                My App es una aplicacion web creada a partir de la idea de poder jugar a diferentes juegos de mesa 
+                pero con la facilidad de tener una aplicacion para hacer ciertas tareas como: apuntar los nombres, 
+                apuntar los puntos, contabilizar tiempo, leer las reglas de juego, etc. En definitiva facilitar 
+                la tarea de algunos juegos de mesa y poder centrarse mas en el propio juego que en la preparación. 
+                Por ejemplo: Imaginemos que queremos jugar al trivial, necesitariamos tarjetas para leer las preguntas, 
+                un dado y un reloj, ademas del tablero y los peones. Pues con My App las tarjetas las tenemos digitalizadas 
+                y así evitariamos que se vuelen con una rafaga de viento, un temporizador con una alerta sonora y visual 
+                para no tener a una persona pendiente de esa tarea, etc. El objetivo es conseguir poco a poco auna utilidades 
+                para facilitar los juegos de mesa.
+            </p> -->
+
+
+            <p>
+                My app es una aplicación web con utilidades para jugar a juegos de mesa, por ahora solo para el Party &
+                CO.
+                Se trata de una herramienta que sustituye las
+                <a href="javascript:void(0)" class="link-tarjeta-digital">tarjetas físicas</a>
+                <img src="../../../assets/project/tarjetadigital.png" alt="" class="tarjeta-digital">
+                por unas digitales, también con <a href="javascript:void(0)"
+                    (click)="goTo('https://my-app-front-one.vercel.app/party/partida')">temporizador
+                    y barajar las tarjetas.</a> Un botón para revisar las reglas de juego, otro para guardar partida.
+                <a href="javascript:void(0)" (click)="goTo('https://my-app-front-one.vercel.app/party/cartas')">Un
+                    catálogo</a> para
+                ver todas las tarjetas, un buscador. Con el rol de administrador el
+                <a href="javascript:void(0)" (click)="verVideo()">CRUD</a> completo para administrar las tarjetas.
+                @if(video){
+
+                <video (click)="verVideo()" src="../../../assets/project/curd.mp4" autoplay class="crud-video"></video>
+                }
+            </p>
+            <h5>Aplicacion totalmente funcional con seguridad y roles. Desplegada al 100%</h5>
+            <span>Tecnologias usadas: <br>
+                Angular, Spring Boot y MySql</span>
+
+            }@else {
+
+            <h5>Fre project</h5>
+            <p>
+                My app is a web application with tools for playing board games, currently only for Party & CO.
+                It is a tool that replaces
+                <a href="javascript:void(0)" class="link-tarjeta-digital">physical cards</a>
+                <img src="../../../assets/project/tarjetadigital.png" alt="" class="tarjeta-digital">
+                with digital ones, also with a <a href="javascript:void(0)"
+                    (click)="goTo('https://my-app-front-one.vercel.app/party/partida')">timer
+                    and shuffle cards.</a> A button to review the game rules, another to save the game.
+                <a href="javascript:void(0)" (click)="goTo('https://my-app-front-one.vercel.app/party/cartas')">A
+                    catalog</a> to view all the cards, and a search function. With the administrator role, the
+                <a href="javascript:void(0)" (click)="verVideo()">complete CRUD</a> to manage the cards.
+                @if(video){
+                    <video (click)="verVideo()" src="../../../assets/project/curd.mp4" autoplay class="crud-video"></video>
+                }
             </p>
             <h5>Fully functional application with security and roles, fully deployed</h5>
             <p>Technologies used: <br>
