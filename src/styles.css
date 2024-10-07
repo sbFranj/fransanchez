@@ -7,6 +7,7 @@
     margin-top: 60px; /* Ajusta el margen superior para compensar la navbar fija */
     padding: 20px;
     text-align: center;
+    height: 90%;
     min-height: calc(100vh - 160px); /* Ajusta el tamaño para considerar la navbar y el footer */
     
   }
