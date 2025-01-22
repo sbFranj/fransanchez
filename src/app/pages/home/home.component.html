@@ -1,79 +1,80 @@
 <div class="main">
-
-    <div class="littleofme">
-
-        <div class="ee">
-            <!-- <img class="me"
+  <div class="littleofme">
+    <div class="ee">
+      <!-- <img class="me"
                 src="https://res.cloudinary.com/dgrri2uuj/image/upload/c_auto,g_north,h_750,w_600/pdf1zf5xfolektmbaeim.jpg"
                 alt=""> -->
-            <img class="me" src="../../../assets/me nature.png" alt="">
-        </div>
-        <div class="desc">
-            <h1>Fran Sánchez</h1>
-            @if (!lenguageService.eng) {
+      <img class="me" src="../../../assets/me nature.png" alt="" />
+    </div>
+    <div class="desc">
+      <h1>Fran Sánchez</h1>
+      @if (!lenguageService.eng) {
 
-            <b>Un poco de mí</b>
-            <p>
-                Soy desarrollador de aplicaciones web, técnico superior en telecomunicaciones y técnico
-                microinformático,
-                con una profunda pasión por la tecnología. Tengo una buena base de Angular, React y Spring Boot.
-                Pero me encanta aprender nuevas habilidades y
-                tecnologías. Valoro la colaboración y disfruto compartiendo mis conocimientos con mis compañeros,
-                estando siempre dispuesto a ayudar. Al mismo tiempo, tengo la capacidad de trabajar de manera
-                independiente y una fuerte motivación para alcanzar mis objetivos. Soy proactivo y me caracteriza
-                una gran energía. Actualmente resido en Sevilla.
-            </p>
-            }@else {
-            <b>A bit about me</b>
-            <p>
-                I'm a web application developer with a strong technical background in telecommunications and IT support, 
-                driven by a deep passion for technology. I have solid experience with Angular, React, and Spring Boot, and 
-                I’m always eager to expand my skill set and learn new technologies. I highly value teamwork and enjoy sharing 
-                my knowledge with others, always ready to lend a hand. At the same time, I work well independently and am 
-                highly motivated to reach my goals. I’m proactive, energetic, and currently based in Seville.
-            </p>
-            }
+      <b>Un poco de mí</b>
+      <p>
+        Soy desarrollador de aplicaciones web, técnico superior en
+        telecomunicaciones y técnico microinformático, con una profunda pasión
+        por la tecnología. Tengo una buena base de Angular, React y Spring Boot.
+        Pero me encanta aprender nuevas habilidades y tecnologías. Valoro la
+        colaboración y disfruto compartiendo mis conocimientos con mis
+        compañeros, estando siempre dispuesto a ayudar. Al mismo tiempo, tengo
+        la capacidad de trabajar de manera independiente y una fuerte motivación
+        para alcanzar mis objetivos. Soy proactivo y me caracteriza una gran
+        energía. Actualmente resido en Sevilla.
+      </p>
+      }@else {
+      <b>A bit about me</b>
+      <p>
+        I'm a web application developer with a strong technical background in
+        telecommunications and IT support, driven by a deep passion for
+        technology. I have solid experience with Angular, React, and Spring
+        Boot, and I’m always eager to expand my skill set and learn new
+        technologies. I highly value teamwork and enjoy sharing my knowledge
+        with others, always ready to lend a hand. At the same time, I work well
+        independently and am highly motivated to reach my goals. I’m proactive,
+        energetic, and currently based in Seville.
+      </p>
+      }
+    </div>
+  </div>
 
-        </div>
+  <div class="div-tecno">
+    <h1>{{ !lenguageService.eng ? "Tecnologías" : "Technologies" }}</h1>
 
+    <div class="grid-tecno">
+      <img src="../../../assets/logos/angular.png" class="logo" alt="logo" />
+      <img src="../../../assets/logos/spring.png" class="logo" alt="" />
+      <img src="../../../assets/logos/java.png" class="logo" alt="" />
+      <img src="../../../assets/logos/javascript.png" class="logo" alt="" />
+      <img src="../../../assets/logos/python.png" class="logo" alt="" />
+      <img src="../../../assets/logos/typescript.png" class="logo" alt="" />
+      <img src="../../../assets/logos/react.png" class="logoh" alt="" />
+      <img src="../../../assets/logos/nodejs.png" class="logow" alt="" />
+      <img src="../../../assets/logos/docker.png" class="logow" alt="" />
+      <img src="../../../assets/logos/express-js.png" class="logo" alt="" />
+      <img src="../../../assets/logos/thymeleaf.png" class="logow" alt="" />
+      <img src="../../../assets/logos/bootstrap.png" class="logo" alt="" />
+      <img src="../../../assets/logos/css.png" class="logoh" alt="" />
+      <img src="../../../assets/logos/html.png" class="logo" alt="" />
+      <img src="../../../assets/logos/git.png" class="logo" alt="" />
+      <img src="../../../assets/logos/eclipse.svg" class="logo" alt="" />
+      <img
+        src="../../../assets/logos/visualstudiocode.png"
+        class="logo"
+        alt=""
+      />
+      <img src="../../../assets/logos/figma.png" class="logo" alt="" />
+      <img src="../../../assets/logos/mysql.png" class="logo" alt="" />
+      <img src="../../../assets/logos/oracle.png" class="logow" alt="" />
+      <img src="../../../assets/logos/mongodb.png" class="logow" alt="" />
+      <img src="../../../assets/logos/postgre.png" class="logo" alt="" />
+      <img src="../../../assets/logos/dbeaver.png" class="logow" alt="" />
+      <img src="../../../assets/logos/phpmyadmin.png" class="logow" alt="" />
+      <img src="../../../assets/logos/xml.svg" class="logoh" alt="" />
+      <img src="../../../assets/logos/json.png" class="logow" alt="" />
+      <img src="../../../assets/logos/jsp.png" class="logoh" alt="" />
     </div>
 
-    <div class="div-tecno">
-
-        <h1>{{!lenguageService.eng? 'Tecnologías' : 'Technologies'}}</h1>
-        
-        <div class="grid-tecno">
-            <img src="../../../assets/logos/angular.png" class="logo" alt="logo">
-            <img src="../../../assets/logos/spring.png" class="logo" alt="">
-            <img src="../../../assets/logos/java.png" class="logo" alt="">
-            <img src="../../../assets/logos/javascript.png" class="logo" alt="">
-            <img src="../../../assets/logos/python.png" class="logo" alt="">
-            <img src="../../../assets/logos/typescript.png" class="logo" alt="">
-            <img src="../../../assets/logos/react.png" class="logoh" alt="">
-            <img src="../../../assets/logos/nodejs.png" class="logow" alt="">
-            <img src="../../../assets/logos/docker.png" class="logow" alt="">
-            <img src="../../../assets/logos/express-js.png" class="logo" alt="">
-            <img src="../../../assets/logos/thymeleaf.png" class="logow" alt="">
-            <img src="../../../assets/logos/bootstrap.png" class="logo"alt="">
-            <img src="../../../assets/logos/css.png" class="logoh" alt="">
-            <img src="../../../assets/logos/html.png" class="logo" alt="">
-            <img src="../../../assets/logos/git.png" class="logo" alt="">
-            <img src="../../../assets/logos/eclipse.svg" class="logo" alt="">
-            <img src="../../../assets/logos/visualstudiocode.png" class="logo" alt="">
-            <img src="../../../assets/logos/figma.png" class="logo" alt="">
-            <img src="../../../assets/logos/mysql.png" class="logo" alt="">
-            <img src="../../../assets/logos/oracle.png" class="logow" alt="">
-            <img src="../../../assets/logos/mongodb.png" class="logow" alt="">
-            <img src="../../../assets/logos/postgre.png" class="logo" alt="">
-            <img src="../../../assets/logos/dbeaver.png" class="logow" alt="">
-            <img src="../../../assets/logos/phpmyadmin.png" class="logow" alt="">
-            <img src="../../../assets/logos/xml.svg" class="logoh" alt="">
-            <img src="../../../assets/logos/json.png" class="logow" alt="">
-            <img src="../../../assets/logos/jsp.png" class="logoh" alt="">
-        </div>
-
-        <div class="separator"></div>
-    </div>
-
-
+    <div class="separator"></div>
+  </div>
 </div>

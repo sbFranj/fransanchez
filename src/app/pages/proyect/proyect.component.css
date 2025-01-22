@@ -1,103 +1,112 @@
-.cont{
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+.cont {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
-img{
-    
-    width: 500px;
-    height: 300px;
-    object-fit: fill;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+img {
+  width: 500px;
+  height: 300px;
+  object-fit: fill;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.flicksense{
-    display: flex;
-    margin-bottom: 1rem;
-    
+.flicksense {
+  display: flex;
+  margin-bottom: 1rem;
 }
 
-.desc{
-    margin-left: 5rem;
-    text-align: left;
+.desc {
+  margin-left: 5rem;
+  text-align: left;
 }
 
-.myapp{
-    display: flex;
-    flex-direction: row-reverse;
+.myapp {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.descmyapp{
-   text-align: right;
-   width: 110%;
-   margin-right: 4rem;
-   
+.descmyapp {
+  text-align: right;
+  width: 110%;
+  margin-right: 4rem;
 }
 
-p{
-    text-align: justify;
+p {
+  text-align: justify;
 }
 
-a{
-    text-align: center;
+a {
+  text-align: center;
 }
 
 .tarjeta-digital {
-    display: none; 
-    position: fixed;
-    top:30%;
-    left: 50%;
-    width: 350px;
-    height: 550px;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  width: 350px;
+  height: 550px;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
 }
 
 .link-tarjeta-digital:hover + .tarjeta-digital {
-    display: flex; 
+  display: flex;
 }
 
-.crud-video{
-    position: fixed;
-    top:60%;
-    left: 50%;
-    width: 15%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    background-color: red;
+.crud-video {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  width: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: red;
 }
+
+.miniDivs {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.miniDivs button {
+  background-color: #398db4;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
 @media screen and (max-width: 800px) {
-    .crud-video{
-        left: 40%;
-        width: 60%;
-    }
-    .descmyapp, .desc{
-        width: 100%;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-    .flicksense, .myapp{
-        flex-direction: column-reverse;
-        margin-bottom: 1rem;
-    }
-    .cont{
-        margin-top: 2rem;
-    }
-    h1{
-        margin-top: 2rem;
-    }
+  .crud-video {
+    left: 40%;
+    width: 60%;
+  }
+  .descmyapp,
+  .desc {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .flicksense,
+  .myapp {
+    flex-direction: column-reverse;
+    margin-bottom: 1rem;
+  }
+  .cont {
+    margin-top: 2rem;
+  }
+  h1 {
+    margin-top: 2rem;
+  }
 
-    img{
-        transform: scale(0.7);
-        margin-left: -4rem;
-        margin-top: -4rem;
-    }
+  img {
+    transform: scale(0.7);
+    margin-left: -4rem;
+    margin-top: -4rem;
+  }
 
-    .desc{
-        margin-left: -0.1rem;
-    }
-    
+  .desc {
+    margin-left: -0.1rem;
+  }
 }
-
